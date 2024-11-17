@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "745370092651",
+    "project_id": "findmyhostel-ffd22",
+    "storage_bucket": "findmyhostel-ffd22.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:745370092651:android:4ba0f7ae287b9106809d2e",
+        "android_client_info": {
+          "package_name": "com.example.apps"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnEaUpOd0RMRJxl4Pc0JOvVQzwsZ4_8mk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
