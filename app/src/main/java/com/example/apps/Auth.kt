@@ -7,6 +7,7 @@ import com.google.firebase.auth.FirebaseUser
 private val auth: FirebaseAuth = FirebaseAuth.getInstance()
 
 fun signUpWithEmail(
+    name : String,
     email: String,
     password: String,
     onResult: (Boolean, FirebaseUser?) -> Unit
