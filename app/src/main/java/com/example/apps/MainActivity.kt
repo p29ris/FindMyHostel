@@ -43,6 +43,7 @@ fun NavigationView(){
         composable("login"){LoginScreen(navController)}
         composable("signup"){ SignUpScreen(navController)}
         composable("home"){ HomeScreen(navController)}
+        composable("forgot_password") { ForgotPasswordScreen(navController) }
 
     }
 }
