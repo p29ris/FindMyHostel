@@ -1,5 +1,6 @@
 package com.example.apps
 
+import android.graphics.Paint.Style
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -107,7 +108,20 @@ fun LoginScreen(
             CTextField(hint = "Email Address", value = email, onValueChange = { email = it })
             CTextField(hint = "Password", value = password, onValueChange = { password = it })
 
-            Spacer(modifier = Modifier.height(24.dp))
+            Text(
+                text = "Forgot Password?",
+                style = TextStyle(
+                    fontSize = 18.sp,
+                    fontFamily = AlegreyaSansFontFamily,
+                    fontWeight = FontWeight(800)),
+                color = Color.Black,
+                modifier = Modifier
+                    .clickable { navController.navigate("forgot_password") }
+                    .padding(top = 15.dp)
+
+            )
+
+            Spacer(modifier = Modifier.height(15.dp))
 
             Box(
                 modifier = Modifier
@@ -147,7 +161,7 @@ fun LoginScreen(
 
 
 
-@Preview(showBackground = true, widthDp = 320, heightDp = 640)
+@Preview(showBackground = true, widthDp = 320, heightDp = 620)
 @Composable
 fun LoginScreenPreview(){
     LoginScreen(rememberNavController())
