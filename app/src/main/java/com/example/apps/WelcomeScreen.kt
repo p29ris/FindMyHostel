@@ -43,7 +43,7 @@ fun WelcomeScreen(
         modifier = modifier.fillMaxSize()
     ){
         //Background Image
-        Image(painter = painterResource(id = R.drawable.bg9),
+        Image(painter = painterResource(id = R.drawable.beds),
             contentDescription = null,
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.fillMaxSize()
@@ -58,9 +58,9 @@ fun WelcomeScreen(
                 .fillMaxSize()
                 .padding(horizontal = 24.dp)
         ){
-            Spacer(modifier = Modifier.weight(1f))
+            Spacer(modifier = Modifier.weight(2.5f))
 
-            Image(painter = painterResource(id = R.drawable.logo_hostel),
+            Image(painter = painterResource(id = R.drawable.hostel_logo),
                 contentDescription = null,
                 modifier = Modifier
                     .width(300.dp)
@@ -76,7 +76,7 @@ fun WelcomeScreen(
 
             )
 
-            Spacer(modifier = Modifier.weight(2f))
+            Spacer(modifier = Modifier.weight(1.5f))
 
             //Button
            CButton(text = "Sign In",

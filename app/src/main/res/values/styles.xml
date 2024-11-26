@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App theme using black, orange, and white -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <!-- Customize your text appearance and other elements -->
+    <style name="TextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

@@ -60,7 +60,7 @@ fun LoginScreen(
         loginWithEmail(email, password) { success, user ->
             if (success) {
                 dialogMessage = "Logged in successfully!"
-                navController.navigate("home") // Navigate to the home screen or another target
+                navController.navigate("hostel_list") // Navigate to the home screen or another target
             } else {
                 dialogMessage = "Login failed. Please check your credentials and try again."
             }
@@ -70,7 +70,7 @@ fun LoginScreen(
     Box(modifier = Modifier.fillMaxSize()) {
         // Background Image
         Image(
-            painter = painterResource(id = R.drawable.bg9),
+            painter = painterResource(id = R.drawable.beds),
             contentDescription = null,
             contentScale = ContentScale.FillBounds,
             modifier = Modifier.fillMaxSize()
@@ -85,7 +85,7 @@ fun LoginScreen(
         ) {
             // Logo and Title
             Image(
-                painter = painterResource(id = R.drawable.logo_hostel),
+                painter = painterResource(id = R.drawable.hostel_logo),
                 contentDescription = null,
                 modifier = Modifier
                     .padding(top = 54.dp)

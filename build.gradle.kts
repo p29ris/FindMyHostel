@@ -12,11 +12,19 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:8.4.1")
+        classpath("com.android.tools.build:gradle:8.7.2")
         classpath("com.google.gms:google-services:4.3.15") // Google services plugin classpath
     }
 }
 
 allprojects {
 
+}
+
+configurations.all {
+    resolutionStrategy {
+        force("androidx.core:core-ktx:1.12.0")
+        force("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
+        force("androidx.appcompat:appcompat:1.6.1")
+    }
 }
